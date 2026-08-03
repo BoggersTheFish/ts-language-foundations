@@ -1,0 +1,330 @@
+{
+  "all_passed": true,
+  "comparison_count": 5,
+  "comparisons": [
+    {
+      "candidate": "one_state",
+      "exact_v0_1": {
+        "dynamic_closure": [
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lumpability_residual_nats": 0.0,
+        "predictive_residual_nats": 0.6931471805599453
+      },
+      "passed": true,
+      "reference_v0_3": {
+        "dynamic_closure": [
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lumpability_residual_nats": 0.0,
+        "predictive_residual_nats": 0.6931471805599453
+      }
+    },
+    {
+      "candidate": "task_visible_bit",
+      "exact_v0_1": {
+        "dynamic_closure": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lumpability_residual_nats": 0.6931471805599453,
+        "predictive_residual_nats": 0.0
+      },
+      "passed": true,
+      "reference_v0_3": {
+        "dynamic_closure": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lumpability_residual_nats": 0.6931471805599453,
+        "predictive_residual_nats": 0.0
+      }
+    },
+    {
+      "candidate": "selected_hidden_phase",
+      "exact_v0_1": {
+        "dynamic_closure": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lumpability_residual_nats": 0.6931471805599453,
+        "predictive_residual_nats": 0.6931471805599453
+      },
+      "passed": true,
+      "reference_v0_3": {
+        "dynamic_closure": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lumpability_residual_nats": 0.6931471805599453,
+        "predictive_residual_nats": 0.6931471805599453
+      }
+    },
+    {
+      "candidate": "alternative_parity",
+      "exact_v0_1": {
+        "dynamic_closure": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lumpability_residual_nats": 0.0,
+        "predictive_residual_nats": 0.6931471805599453
+      },
+      "passed": true,
+      "reference_v0_3": {
+        "dynamic_closure": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lumpability_residual_nats": 0.0,
+        "predictive_residual_nats": 0.6931471805599453
+      }
+    },
+    {
+      "candidate": "full_repaired_state",
+      "exact_v0_1": {
+        "dynamic_closure": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lumpability_residual_nats": 0.0,
+        "predictive_residual_nats": 0.0
+      },
+      "passed": true,
+      "reference_v0_3": {
+        "dynamic_closure": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "lumpability_residual_nats": 0.0,
+        "predictive_residual_nats": 0.0
+      }
+    }
+  ],
+  "generated_at_utc": "2026-08-02T13:21:27.192215+00:00",
+  "reference_core_sha256": "3be916dacdd7eecda04b3eda07c207ab44fd98a7e0f2c29d9eac772d1227e023",
+  "reference_source": "/workspace/scratch/ba486bbb5766/work/ts-representation-repair-v0.3.0/src",
+  "schema_version": "ts-language-foundations-cross-check-v0.1"
+}

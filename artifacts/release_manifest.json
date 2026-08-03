@@ -1,0 +1,378 @@
+{
+  "algorithm": "sha256",
+  "excluded_files": [
+    "artifacts/release_manifest.json",
+    "artifacts/validation_receipt.json"
+  ],
+  "file_count": 73,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "662d32f03a929bad600bfc0c4983bbc4f64eb87164fb7aee0804902aa8ef62aa",
+      "size_bytes": 7417
+    },
+    {
+      "path": "README.md",
+      "sha256": "73eea2c7ab1cce7da4cc57559f69742782168e85c9b4c88887225c361377023d",
+      "size_bytes": 18431
+    },
+    {
+      "path": "artifacts/active_repair_receipt.json",
+      "sha256": "ede3f527af3d093161409c70a2f110fca7f249a6e1a0f003a12636ced3482088",
+      "size_bytes": 1189550
+    },
+    {
+      "path": "artifacts/infinite_interface_receipt.json",
+      "sha256": "d1997d19db0368a5e0790285c3d36580e3a413c6152e413d81a645fc1a54e91a",
+      "size_bytes": 380139
+    },
+    {
+      "path": "artifacts/online_interface_receipt.json",
+      "sha256": "723665999742ff251396f793ed16a6bd4d554b677b7d9e3a90b9215ffb36d97d",
+      "size_bytes": 66761
+    },
+    {
+      "path": "artifacts/reference_cross_check.json",
+      "sha256": "b6b5bd51f93ad04efee73a0b11b7dbce2f18846983c18f508f7d3908908bf935",
+      "size_bytes": 5686
+    },
+    {
+      "path": "artifacts/relational_repair_receipt.json",
+      "sha256": "0b77792614364709c38d60f8fa9d7137b1a4abbf8d64e4d670a6d2bdb98bd47e",
+      "size_bytes": 2369972
+    },
+    {
+      "path": "artifacts/run_receipt.json",
+      "sha256": "693b845fd302a0fc46d3e647e0fe71ab9ca2a7c5d27721c9ae2bedd4fbcca280",
+      "size_bytes": 93891
+    },
+    {
+      "path": "artifacts/sequence_repair_receipt.json",
+      "sha256": "25e176d56fcceeb79f138c71fa59d9cd87709e7bae594fc14f9f63f80582910d",
+      "size_bytes": 3009032
+    },
+    {
+      "path": "artifacts/stochastic_interface_receipt.json",
+      "sha256": "fdf802308dd1d4cc0fcb8e67efcc7624207ecf5928d762520339f74a1d6a3b93",
+      "size_bytes": 215790
+    },
+    {
+      "path": "docs/ACTIVE_REPAIR_REPORT.md",
+      "sha256": "6fab241a856a678e6061d068b8f67ea9765151ce4943d6f26eb269ff1218c0ec",
+      "size_bytes": 5801
+    },
+    {
+      "path": "docs/INFINITE_INTERFACE_REPORT.md",
+      "sha256": "0a36bdadc6663198aae78a31a6cefbd72dc12f4a06c2763b958814ef88123ac4",
+      "size_bytes": 5410
+    },
+    {
+      "path": "docs/ONLINE_INTERFACE_REPORT.md",
+      "sha256": "bb36e2f6a55ca295a98c8d3f750ea913bbcbbede66bb71459889b4da6df5449b",
+      "size_bytes": 4401
+    },
+    {
+      "path": "docs/RELATIONAL_REPAIR_REPORT.md",
+      "sha256": "32b022790c09adf4525ee9b7b60d925488996a85ddeae3a19e328bc7c5b38d72",
+      "size_bytes": 8248
+    },
+    {
+      "path": "docs/SEQUENCE_REPAIR_REPORT.md",
+      "sha256": "24d454563c630faf3b88f4d357ae88c16567f924ea10d243a62aac3b8c6d12c1",
+      "size_bytes": 6077
+    },
+    {
+      "path": "docs/STOCHASTIC_INTERFACE_REPORT.md",
+      "sha256": "020b38dc25a2fb59f5a4c4129f1c16194540705ccf3d5a7d5dc52653b09afa3c",
+      "size_bytes": 5082
+    },
+    {
+      "path": "docs/TECHNICAL_REPORT.md",
+      "sha256": "fd526880fa450b4a6195222352841f4fd995c5cb84f68db316039197b54fffc0",
+      "size_bytes": 3911
+    },
+    {
+      "path": "figures/active_repair.svg",
+      "sha256": "fea338685ac29369d79f20c33c04e30f90c10c1ad3d904d0769a1abd62d79335",
+      "size_bytes": 6228
+    },
+    {
+      "path": "figures/finite_protocol.svg",
+      "sha256": "d5541c081b41eb004d8c44a17b21bbfeb0e45ba6f8a105ea85f08eaf8b3d3e1c",
+      "size_bytes": 2872
+    },
+    {
+      "path": "figures/infinite_interface.svg",
+      "sha256": "a2d2ddbde9aa76131d3bdaf0af70641527cb866b91b6916cc98e42f39fe363a9",
+      "size_bytes": 5274
+    },
+    {
+      "path": "figures/online_interface_learning.svg",
+      "sha256": "5e160b60c04e53c0c8742da414a61b8b399227b706b43d7994fabe07f6b63095",
+      "size_bytes": 6829
+    },
+    {
+      "path": "figures/relational_repair.svg",
+      "sha256": "ce098b04a585d75c6ceff4b0cc943b2cf140bef81c8f6426a83eae8993e8ae55",
+      "size_bytes": 8066
+    },
+    {
+      "path": "figures/sequence_repair.svg",
+      "sha256": "7e079131d723d2fd679ab4b214fa10c54e8a6c5ef3a15e8f75bc767618860c3c",
+      "size_bytes": 4266
+    },
+    {
+      "path": "figures/stochastic_interface_learning.svg",
+      "sha256": "8b914d3a7b08269d600a365f3871d812e12bed06ca6fc4365c8587c4f7ce8031",
+      "size_bytes": 8093
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "99f2b35234e5567e771cd2858edf93512700dd9d33f8ee154e21e1e6bb237703",
+      "size_bytes": 1000
+    },
+    {
+      "path": "scripts/build_release_manifest.py",
+      "sha256": "3cbb6439357d634e2f028a49294d224a6f4085ab6c2efaa076fabcee080bed2f",
+      "size_bytes": 2455
+    },
+    {
+      "path": "scripts/cross_check_reference.py",
+      "sha256": "6e1b698f499285aafcb5b2c4a58767a1a70c82795010fee45206b1edaf911279",
+      "size_bytes": 3707
+    },
+    {
+      "path": "scripts/run_experiment.sh",
+      "sha256": "defd550ba36907a70a2fbdbbd5fc6f01a2f34adc53b79d850f98ed175810484c",
+      "size_bytes": 2713
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "sha256": "ed099c8f5e2fed157759751423526275fc66a50bc9cd3629c97418ccf2c3967e",
+      "size_bytes": 15353
+    },
+    {
+      "path": "src/ts_language_foundations/__init__.py",
+      "sha256": "261c303fef6ba8e3054b35333e95a9302ecc3457e634544e13bade78400acdbd",
+      "size_bytes": 2777
+    },
+    {
+      "path": "src/ts_language_foundations/active.py",
+      "sha256": "7225ab30bccc147aa83226052b579c47cca8166ad471a93e3ae1dd51d8638fc7",
+      "size_bytes": 50757
+    },
+    {
+      "path": "src/ts_language_foundations/active_cli.py",
+      "sha256": "918069b84d4e45f514b73a383669b5d30d0faf010a97d7b28cc535b78d8ae27c",
+      "size_bytes": 2613
+    },
+    {
+      "path": "src/ts_language_foundations/active_experiment.py",
+      "sha256": "2c26b5c2b04a7aeaa6c720593afa4b87971ada2448aea08725c5e00a58285569",
+      "size_bytes": 53047
+    },
+    {
+      "path": "src/ts_language_foundations/cli.py",
+      "sha256": "fdab3f691188c78cc7a0df15c02b58936ea4d828f9ad3495e9e4c9f11b0db5e6",
+      "size_bytes": 1547
+    },
+    {
+      "path": "src/ts_language_foundations/experiment.py",
+      "sha256": "90454fb6da863246f4fa320af893617e1606e020499c7a1b31f0723827838834",
+      "size_bytes": 29931
+    },
+    {
+      "path": "src/ts_language_foundations/factorization.py",
+      "sha256": "9cdfd11c0720fcd31f266b6b150782a45f70a03c43846fe61c2af227cd79931e",
+      "size_bytes": 12988
+    },
+    {
+      "path": "src/ts_language_foundations/infinite.py",
+      "sha256": "d2e1d9d42fd12baf708ff8544e8aa1687d3304ffea05d019224a5aca86a969ae",
+      "size_bytes": 17657
+    },
+    {
+      "path": "src/ts_language_foundations/infinite_cli.py",
+      "sha256": "23590d6139b11e05a8579010d5f5697bf7121ece66c20e86d783d31555461c5b",
+      "size_bytes": 1678
+    },
+    {
+      "path": "src/ts_language_foundations/infinite_experiment.py",
+      "sha256": "6d891e8fa559ce50c641a24653a78b775dcfa8112d7c35707406e38bf1c8606f",
+      "size_bytes": 28893
+    },
+    {
+      "path": "src/ts_language_foundations/online.py",
+      "sha256": "be1a6cec8c5ddb712c43b9bcf2dc849015918d9768eca40b29b4397a9f049588",
+      "size_bytes": 19879
+    },
+    {
+      "path": "src/ts_language_foundations/online_cli.py",
+      "sha256": "b00d18f18941bfcd70226d9bd5b501ecfc79c7d0cd45d590bf2fb4e3d1682925",
+      "size_bytes": 2117
+    },
+    {
+      "path": "src/ts_language_foundations/online_experiment.py",
+      "sha256": "6af37586d739d3d6f34b493fd831f5c5796ad4272f76ea76d73acdc63c237861",
+      "size_bytes": 36795
+    },
+    {
+      "path": "src/ts_language_foundations/protocol.py",
+      "sha256": "73a54a6adf1be13b5ff3fa5d607502fecec78fdfbc3d6ebef7c085b3c435bddd",
+      "size_bytes": 12346
+    },
+    {
+      "path": "src/ts_language_foundations/relational.py",
+      "sha256": "255772915a736b379b046e5efa09bb7778598796b4bfe2b65c979bae2ae394a3",
+      "size_bytes": 62901
+    },
+    {
+      "path": "src/ts_language_foundations/relational_cli.py",
+      "sha256": "d99c8178a6a42a006492def9cf161fbc48132bb9213298d52e3a53da86209e2e",
+      "size_bytes": 2676
+    },
+    {
+      "path": "src/ts_language_foundations/relational_experiment.py",
+      "sha256": "9f89800ff157255d6548af05c7a78e02ba68aff3a68df7ab0d7ab17ccf7636a7",
+      "size_bytes": 68999
+    },
+    {
+      "path": "src/ts_language_foundations/repair.py",
+      "sha256": "3bdbc152f502f4bb5328d263ac4c6d18ec0ff90b7246b9548c41a1bd9042fe74",
+      "size_bytes": 9081
+    },
+    {
+      "path": "src/ts_language_foundations/sequence.py",
+      "sha256": "0faf89cba2ef4e5b9f312b0b67ea96f3680fccfeadc0ada6d785f262e2369a0a",
+      "size_bytes": 59356
+    },
+    {
+      "path": "src/ts_language_foundations/sequence_cli.py",
+      "sha256": "d23a7e35462b5e10afece64e2c2910cac5145889f31f3730ecf865cc24480cd2",
+      "size_bytes": 2527
+    },
+    {
+      "path": "src/ts_language_foundations/sequence_experiment.py",
+      "sha256": "58943537c4a10b3c2bc99bd5a2e12b13fbd6a9da6364311f5cc040cf9ab41c63",
+      "size_bytes": 66045
+    },
+    {
+      "path": "src/ts_language_foundations/stochastic.py",
+      "sha256": "e7605ac101966c263b8d90378a10bd5de2487865e13f9f1dcc2f34a70b75750c",
+      "size_bytes": 26989
+    },
+    {
+      "path": "src/ts_language_foundations/stochastic_cli.py",
+      "sha256": "a684fa50352e62a464e4bbc1c7266d1b8d341f3a65e27cea69237910f273dcc9",
+      "size_bytes": 2786
+    },
+    {
+      "path": "src/ts_language_foundations/stochastic_experiment.py",
+      "sha256": "68f35a175272198b879491ea13077259a88317d87c0b5c97444ebcf325c2ae77",
+      "size_bytes": 57848
+    },
+    {
+      "path": "src/ts_language_foundations/world.py",
+      "sha256": "5e1aa35a617b2c45d0b08c1f63c686f771f33c6c4caec242c6d9b1e8344d90bd",
+      "size_bytes": 2128
+    },
+    {
+      "path": "tests/test_active.py",
+      "sha256": "274c8349ae09ce49cef932f31a00d546407e2a5682f370d4470f9b18a50e2f01",
+      "size_bytes": 7630
+    },
+    {
+      "path": "tests/test_active_experiment.py",
+      "sha256": "93d53004fd8f886de6055a589debad2949f05b0b95a6726e7d4c680c4b5019de",
+      "size_bytes": 1028
+    },
+    {
+      "path": "tests/test_countdown.py",
+      "sha256": "ad15e0a46d37601311850b99b5912586af0daa6b1d4fb9f3577f781190dcdaa3",
+      "size_bytes": 4667
+    },
+    {
+      "path": "tests/test_exhaustive_small.py",
+      "sha256": "1dc083d41b020352dbdb5592793f61d941e090b14eae47ceff07033906370243",
+      "size_bytes": 1728
+    },
+    {
+      "path": "tests/test_experiment.py",
+      "sha256": "e6e4405d70fde135f47d9b4193580e21663fa2c31346eb99e5b1a01e95483a1a",
+      "size_bytes": 1231
+    },
+    {
+      "path": "tests/test_factorization.py",
+      "sha256": "96e32a8c49b5147d823736389a10503d9141866c046a59f33d5423ada980cfb8",
+      "size_bytes": 2882
+    },
+    {
+      "path": "tests/test_infinite_experiment.py",
+      "sha256": "e348b9cd3e39eb03cd744ddf6d3df40e0aaada291775e357a2d01d498a647504",
+      "size_bytes": 1151
+    },
+    {
+      "path": "tests/test_infinite_stable.py",
+      "sha256": "edce8d77435485d6dbe90df237ad41ff8041e59003d219fcc8f4cdbc5ea005c6",
+      "size_bytes": 2182
+    },
+    {
+      "path": "tests/test_online.py",
+      "sha256": "b68305729e2d6e4015f4a97ccb72f3731067200bb10742e1528ed54e47e1adbf",
+      "size_bytes": 5234
+    },
+    {
+      "path": "tests/test_online_experiment.py",
+      "sha256": "714694d398d81df901621945ab3ae81b8da3fdb744a7f9159a90631a2b65ae73",
+      "size_bytes": 2310
+    },
+    {
+      "path": "tests/test_protocol.py",
+      "sha256": "4daa764a12080dcb7727f0d52487cfdc54b191465fa26c6979ffb9c74174fd4e",
+      "size_bytes": 3150
+    },
+    {
+      "path": "tests/test_relational.py",
+      "sha256": "73110f81c88191974d9660ab4e8e5dcf5a98218ba613ca81eb571b5c0e9690d9",
+      "size_bytes": 11337
+    },
+    {
+      "path": "tests/test_relational_experiment.py",
+      "sha256": "ffca2bb92ddd738c1c54db2517ea1e8527ba3ab6bfd620b29acf9aa7c4143d5f",
+      "size_bytes": 1177
+    },
+    {
+      "path": "tests/test_repair.py",
+      "sha256": "ea045cf30a1d8b9ad60dc8a31a67d3c6fba12ec76bbf0fa398a08cf6f89d308f",
+      "size_bytes": 2096
+    },
+    {
+      "path": "tests/test_sequence.py",
+      "sha256": "07e53bd7d3ac2e50b0aa849925409e425b808472d7c731963b54b8204d465d90",
+      "size_bytes": 11698
+    },
+    {
+      "path": "tests/test_sequence_experiment.py",
+      "sha256": "3b2e3b104d5c694b8c9c2e8e0c1475bd5d0821d5d99ccb445e895cd9a5f967cf",
+      "size_bytes": 987
+    },
+    {
+      "path": "tests/test_stochastic.py",
+      "sha256": "61105a72f819a66c45639240fbb288a8a4ecc9cf350959d85dded1e0b9b800d4",
+      "size_bytes": 6901
+    },
+    {
+      "path": "tests/test_stochastic_experiment.py",
+      "sha256": "6858c494e9a547839b52e7c465f585b94efaa69dd9539540e83bb36494d94519",
+      "size_bytes": 1798
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "b2f22b960c75cbf28bf59c7fb9cee0b8ce1271df6fdf7b840c0c277ef5aab667",
+      "size_bytes": 76225
+    }
+  ],
+  "generated_at_utc": "2026-08-02T15:21:01.793186+00:00",
+  "root_name": "ts-language-foundations-v0.7.0",
+  "schema_version": "ts-language-foundations-release-manifest-v0.7"
+}

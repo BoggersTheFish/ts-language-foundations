@@ -1,0 +1,2821 @@
+{
+  "algorithm": {
+    "closure_test": "compiled context transitions remain inside the supported finite context set",
+    "failure_policy": "abstain globally when an exact conflict survives the declared memory budget",
+    "initial_interface": "last observed symbol",
+    "input": "observation episodes only",
+    "novelty_boundary": "suffix-memory growth is standard machinery; this experiment tests its explicit integration with predictive repair, dynamic closure, fail-closed verification, and infinite-fibre semantics",
+    "repair": "increase suffix order by one and rebuild from admitted observations",
+    "standard_connections": "variable-order Markov modelling, deterministic automata inference, predictive equivalence, causal-state ideas, and partition refinement",
+    "verifier": "same represented suffix must not have two distinct observed next symbols"
+  },
+  "conclusion": {
+    "established_in_fixtures": "observation-only counterexamples select a two-symbol history interface in the stable process; predictive repair alone gives two blocks, while dynamic closure forces the exact four-state machine",
+    "failure_result": "the same learner rejects every tested finite suffix budget on the countdown instead of fabricating a closed state",
+    "next_falsifiable_experiment": "replace exact conflicts by confidence-bounded distributional tests under controlled noise, while charging explicit memory and sampling costs",
+    "not_established": "robust stochastic learning, continuous observations, scalable active experiment selection, language acquisition, or superiority to trained neural sequence models"
+  },
+  "experiment": {
+    "name": "counterexample-guided observation-only interface learning",
+    "question": "Can a learner with no hidden-state access discover the finite memory needed for prediction and autonomous continuation, and abstain when its finite memory budget cannot close the process?",
+    "version": "0.3.0"
+  },
+  "negative_control": {
+    "input_payload_sha256": "f8b46c1200e38327da8259c40beda12fedfaa2fa72612ef73fd07c2dbe036456",
+    "learned_interface": {
+      "certified": false,
+      "context_count": 0,
+      "contexts": [
+        {
+          "context": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "context_label": "[0,0,0,0,0,0,0,0]",
+          "predicted_next_symbol": null,
+          "support": 4
+        }
+      ],
+      "episodes_seen": 2,
+      "final_order": 8,
+      "initial_order": 1,
+      "maximum_order": 8,
+      "minimum_context_support": 1,
+      "missing_successor_contexts": [],
+      "observations_seen": 20,
+      "repair_event_count": 7,
+      "repair_events": [
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0
+              ],
+              "episode_index": 0,
+              "observation_prefix": [
+                0
+              ],
+              "target": 0,
+              "time_index": 0
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0
+              ],
+              "episode_index": 1,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 8
+            },
+            "shared_context": [
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 2,
+          "event_index": 0,
+          "order_after": 2,
+          "order_before": 1,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 1
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0
+              ],
+              "episode_index": 0,
+              "observation_prefix": [
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 1
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0
+              ],
+              "episode_index": 1,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 8
+            },
+            "shared_context": [
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 2,
+          "event_index": 1,
+          "order_after": 3,
+          "order_before": 2,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 1
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0,
+                0
+              ],
+              "episode_index": 0,
+              "observation_prefix": [
+                0,
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 2
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0,
+                0
+              ],
+              "episode_index": 1,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 8
+            },
+            "shared_context": [
+              0,
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 2,
+          "event_index": 2,
+          "order_after": 4,
+          "order_before": 3,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 1
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 0,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 3
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 1,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 8
+            },
+            "shared_context": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 2,
+          "event_index": 3,
+          "order_after": 5,
+          "order_before": 4,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 1
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 0,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 4
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 1,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 8
+            },
+            "shared_context": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 2,
+          "event_index": 4,
+          "order_after": 6,
+          "order_before": 5,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 1
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 0,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 5
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 1,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 8
+            },
+            "shared_context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 2,
+          "event_index": 5,
+          "order_after": 7,
+          "order_before": 6,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 1
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 0,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 6
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 1,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 8
+            },
+            "shared_context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 2,
+          "event_index": 6,
+          "order_after": 8,
+          "order_before": 7,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 1
+        }
+      ],
+      "repair_trace": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sparse_contexts": [],
+      "status": "memory_budget_exhausted",
+      "terminal_counterexample": {
+        "left": {
+          "context": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "episode_index": 0,
+          "observation_prefix": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "target": 0,
+          "time_index": 7
+        },
+        "passed": true,
+        "right": {
+          "context": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "episode_index": 1,
+          "observation_prefix": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "target": 1,
+          "time_index": 8
+        },
+        "shared_context": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "targets_disagree": true
+      },
+      "transitions_considered": 4
+    },
+    "meaning": "an exact learner must not silently turn irreconcilable observations into a deterministic autonomous law",
+    "name": "directly contradictory observation control",
+    "passed": true
+  },
+  "provenance": {
+    "source_hashes": {
+      "pyproject.toml": "99f2b35234e5567e771cd2858edf93512700dd9d33f8ee154e21e1e6bb237703",
+      "scripts/build_release_manifest.py": "3cbb6439357d634e2f028a49294d224a6f4085ab6c2efaa076fabcee080bed2f",
+      "scripts/cross_check_reference.py": "6e1b698f499285aafcb5b2c4a58767a1a70c82795010fee45206b1edaf911279",
+      "scripts/verify_release.py": "ed099c8f5e2fed157759751423526275fc66a50bc9cd3629c97418ccf2c3967e",
+      "src/ts_language_foundations/__init__.py": "261c303fef6ba8e3054b35333e95a9302ecc3457e634544e13bade78400acdbd",
+      "src/ts_language_foundations/active.py": "7225ab30bccc147aa83226052b579c47cca8166ad471a93e3ae1dd51d8638fc7",
+      "src/ts_language_foundations/active_cli.py": "918069b84d4e45f514b73a383669b5d30d0faf010a97d7b28cc535b78d8ae27c",
+      "src/ts_language_foundations/active_experiment.py": "2c26b5c2b04a7aeaa6c720593afa4b87971ada2448aea08725c5e00a58285569",
+      "src/ts_language_foundations/cli.py": "fdab3f691188c78cc7a0df15c02b58936ea4d828f9ad3495e9e4c9f11b0db5e6",
+      "src/ts_language_foundations/experiment.py": "90454fb6da863246f4fa320af893617e1606e020499c7a1b31f0723827838834",
+      "src/ts_language_foundations/factorization.py": "9cdfd11c0720fcd31f266b6b150782a45f70a03c43846fe61c2af227cd79931e",
+      "src/ts_language_foundations/infinite.py": "d2e1d9d42fd12baf708ff8544e8aa1687d3304ffea05d019224a5aca86a969ae",
+      "src/ts_language_foundations/infinite_cli.py": "23590d6139b11e05a8579010d5f5697bf7121ece66c20e86d783d31555461c5b",
+      "src/ts_language_foundations/infinite_experiment.py": "6d891e8fa559ce50c641a24653a78b775dcfa8112d7c35707406e38bf1c8606f",
+      "src/ts_language_foundations/online.py": "be1a6cec8c5ddb712c43b9bcf2dc849015918d9768eca40b29b4397a9f049588",
+      "src/ts_language_foundations/online_cli.py": "b00d18f18941bfcd70226d9bd5b501ecfc79c7d0cd45d590bf2fb4e3d1682925",
+      "src/ts_language_foundations/online_experiment.py": "6af37586d739d3d6f34b493fd831f5c5796ad4272f76ea76d73acdc63c237861",
+      "src/ts_language_foundations/protocol.py": "73a54a6adf1be13b5ff3fa5d607502fecec78fdfbc3d6ebef7c085b3c435bddd",
+      "src/ts_language_foundations/relational.py": "255772915a736b379b046e5efa09bb7778598796b4bfe2b65c979bae2ae394a3",
+      "src/ts_language_foundations/relational_cli.py": "d99c8178a6a42a006492def9cf161fbc48132bb9213298d52e3a53da86209e2e",
+      "src/ts_language_foundations/relational_experiment.py": "9f89800ff157255d6548af05c7a78e02ba68aff3a68df7ab0d7ab17ccf7636a7",
+      "src/ts_language_foundations/repair.py": "3bdbc152f502f4bb5328d263ac4c6d18ec0ff90b7246b9548c41a1bd9042fe74",
+      "src/ts_language_foundations/sequence.py": "0faf89cba2ef4e5b9f312b0b67ea96f3680fccfeadc0ada6d785f262e2369a0a",
+      "src/ts_language_foundations/sequence_cli.py": "d23a7e35462b5e10afece64e2c2910cac5145889f31f3730ecf865cc24480cd2",
+      "src/ts_language_foundations/sequence_experiment.py": "58943537c4a10b3c2bc99bd5a2e12b13fbd6a9da6364311f5cc040cf9ab41c63",
+      "src/ts_language_foundations/stochastic.py": "e7605ac101966c263b8d90378a10bd5de2487865e13f9f1dcc2f34a70b75750c",
+      "src/ts_language_foundations/stochastic_cli.py": "a684fa50352e62a464e4bbc1c7266d1b8d341f3a65e27cea69237910f273dcc9",
+      "src/ts_language_foundations/stochastic_experiment.py": "68f35a175272198b879491ea13077259a88317d87c0b5c97444ebcf325c2ae77",
+      "src/ts_language_foundations/world.py": "5e1aa35a617b2c45d0b08c1f63c686f771f33c6c4caec242c6d9b1e8344d90bd",
+      "tests/test_active.py": "274c8349ae09ce49cef932f31a00d546407e2a5682f370d4470f9b18a50e2f01",
+      "tests/test_active_experiment.py": "93d53004fd8f886de6055a589debad2949f05b0b95a6726e7d4c680c4b5019de",
+      "tests/test_countdown.py": "ad15e0a46d37601311850b99b5912586af0daa6b1d4fb9f3577f781190dcdaa3",
+      "tests/test_exhaustive_small.py": "1dc083d41b020352dbdb5592793f61d941e090b14eae47ceff07033906370243",
+      "tests/test_experiment.py": "e6e4405d70fde135f47d9b4193580e21663fa2c31346eb99e5b1a01e95483a1a",
+      "tests/test_factorization.py": "96e32a8c49b5147d823736389a10503d9141866c046a59f33d5423ada980cfb8",
+      "tests/test_infinite_experiment.py": "e348b9cd3e39eb03cd744ddf6d3df40e0aaada291775e357a2d01d498a647504",
+      "tests/test_infinite_stable.py": "edce8d77435485d6dbe90df237ad41ff8041e59003d219fcc8f4cdbc5ea005c6",
+      "tests/test_online.py": "b68305729e2d6e4015f4a97ccb72f3731067200bb10742e1528ed54e47e1adbf",
+      "tests/test_online_experiment.py": "714694d398d81df901621945ab3ae81b8da3fdb744a7f9159a90631a2b65ae73",
+      "tests/test_protocol.py": "4daa764a12080dcb7727f0d52487cfdc54b191465fa26c6979ffb9c74174fd4e",
+      "tests/test_relational.py": "73110f81c88191974d9660ab4e8e5dcf5a98218ba613ca81eb571b5c0e9690d9",
+      "tests/test_relational_experiment.py": "ffca2bb92ddd738c1c54db2517ea1e8527ba3ab6bfd620b29acf9aa7c4143d5f",
+      "tests/test_repair.py": "ea045cf30a1d8b9ad60dc8a31a67d3c6fba12ec76bbf0fa398a08cf6f89d308f",
+      "tests/test_sequence.py": "07e53bd7d3ac2e50b0aa849925409e425b808472d7c731963b54b8204d465d90",
+      "tests/test_sequence_experiment.py": "3b2e3b104d5c694b8c9c2e8e0c1475bd5d0821d5d99ccb445e895cd9a5f967cf",
+      "tests/test_stochastic.py": "61105a72f819a66c45639240fbb288a8a4ecc9cf350959d85dded1e0b9b800d4",
+      "tests/test_stochastic_experiment.py": "6858c494e9a547839b52e7c465f585b94efaa69dd9539540e83bb36494d94519"
+    }
+  },
+  "run": {
+    "countdown_post_absorption_steps": 16,
+    "external_corpus": null,
+    "generated_at_utc": "2026-08-02T15:02:17.882770+00:00",
+    "maximum_suffix_order": 8,
+    "minimum_context_support": 8,
+    "network_required": false,
+    "neural_components": [],
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.39",
+    "python": "3.12.13 (main, Mar  3 2026, 14:59:34) [Clang 21.1.4 ]",
+    "random_seed": null,
+    "stable_episode_length": 64,
+    "stable_heldout_length": 128,
+    "stochastic_sampling": false,
+    "tokenizer": null
+  },
+  "schema_version": "ts-language-foundations-online-interface-v0.3",
+  "stable_infinite_fibre_case": {
+    "baselines": {
+      "current_observation_majority": {
+        "abstained": 0,
+        "accuracy_on_covered": 0.5,
+        "correct": 254,
+        "coverage": 1.0,
+        "eligible_transitions": 508,
+        "error_example_count": 8,
+        "error_examples": [
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 1
+          },
+          {
+            "context": [
+              1
+            ],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 2
+          },
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 5
+          },
+          {
+            "context": [
+              1
+            ],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 6
+          },
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 9
+          },
+          {
+            "context": [
+              1
+            ],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 10
+          },
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 13
+          },
+          {
+            "context": [
+              1
+            ],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 14
+          }
+        ],
+        "exact_on_eligible_transitions": false,
+        "order": 1,
+        "total_error_records": 254,
+        "wrong": 254
+      },
+      "fixed_order_two_sequence": {
+        "abstained": 0,
+        "accuracy_on_covered": 1.0,
+        "correct": 504,
+        "coverage": 1.0,
+        "eligible_transitions": 504,
+        "error_example_count": 0,
+        "error_examples": [],
+        "exact_on_eligible_transitions": true,
+        "order": 2,
+        "total_error_records": 0,
+        "wrong": 0
+      },
+      "one_state_majority": {
+        "abstained": 0,
+        "accuracy_on_covered": 0.5,
+        "correct": 254,
+        "coverage": 1.0,
+        "eligible_transitions": 508,
+        "error_example_count": 8,
+        "error_examples": [
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 1
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 2
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 5
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 6
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 9
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 10
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 13
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 14
+          }
+        ],
+        "exact_on_eligible_transitions": false,
+        "order": 0,
+        "total_error_records": 254,
+        "wrong": 254
+      }
+    },
+    "candidate_abstractions": {
+      "current_observation": {
+        "block_count": 2,
+        "dynamic_closure": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "dynamic_closure_excess_blocks": 2,
+        "dynamic_closure_symbols": [
+          [
+            "z0"
+          ],
+          [
+            "z1"
+          ],
+          [
+            "z2"
+          ],
+          [
+            "z3"
+          ]
+        ],
+        "dynamic_fixed": false,
+        "dynamic_repair_trace": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "joint_fixed": false,
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "joint_repair_excess_blocks": 2,
+        "joint_repair_symbols": [
+          [
+            "z0"
+          ],
+          [
+            "z1"
+          ],
+          [
+            "z2"
+          ],
+          [
+            "z3"
+          ]
+        ],
+        "joint_repair_trace": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "lumpability_residual_nats": 0.6931471805599453,
+        "name": "current observed symbol",
+        "partition": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "partition_entropy_nats": 0.6931471805599453,
+        "partition_symbols": [
+          [
+            "z0",
+            "z2"
+          ],
+          [
+            "z1",
+            "z3"
+          ]
+        ],
+        "predictive_fixed": false,
+        "predictive_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "predictive_repair_symbols": [
+          [
+            "z0"
+          ],
+          [
+            "z1"
+          ],
+          [
+            "z2"
+          ],
+          [
+            "z3"
+          ]
+        ],
+        "predictive_residual_nats": 0.6931471805599453,
+        "strongly_lumpable": false
+      },
+      "learned_suffix_identity": {
+        "block_count": 4,
+        "dynamic_closure": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "dynamic_closure_excess_blocks": 0,
+        "dynamic_closure_symbols": [
+          [
+            "z0"
+          ],
+          [
+            "z1"
+          ],
+          [
+            "z2"
+          ],
+          [
+            "z3"
+          ]
+        ],
+        "dynamic_fixed": true,
+        "dynamic_repair_trace": [
+          [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "joint_fixed": true,
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "joint_repair_excess_blocks": 0,
+        "joint_repair_symbols": [
+          [
+            "z0"
+          ],
+          [
+            "z1"
+          ],
+          [
+            "z2"
+          ],
+          [
+            "z3"
+          ]
+        ],
+        "joint_repair_trace": [
+          [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "lumpability_residual_nats": 0.0,
+        "name": "learned two-symbol suffix identity",
+        "partition": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "partition_entropy_nats": 1.3862943611198906,
+        "partition_symbols": [
+          [
+            "z0"
+          ],
+          [
+            "z1"
+          ],
+          [
+            "z2"
+          ],
+          [
+            "z3"
+          ]
+        ],
+        "predictive_fixed": true,
+        "predictive_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "predictive_repair_symbols": [
+          [
+            "z0"
+          ],
+          [
+            "z1"
+          ],
+          [
+            "z2"
+          ],
+          [
+            "z3"
+          ]
+        ],
+        "predictive_residual_nats": 0.0,
+        "strongly_lumpable": true
+      },
+      "next_symbol_predictive_partition": {
+        "block_count": 2,
+        "dynamic_closure": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "dynamic_closure_excess_blocks": 2,
+        "dynamic_closure_symbols": [
+          [
+            "z0"
+          ],
+          [
+            "z1"
+          ],
+          [
+            "z2"
+          ],
+          [
+            "z3"
+          ]
+        ],
+        "dynamic_fixed": false,
+        "dynamic_repair_trace": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "joint_fixed": false,
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "joint_repair_excess_blocks": 2,
+        "joint_repair_symbols": [
+          [
+            "z0"
+          ],
+          [
+            "z1"
+          ],
+          [
+            "z2"
+          ],
+          [
+            "z3"
+          ]
+        ],
+        "joint_repair_trace": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "lumpability_residual_nats": 0.6931471805599453,
+        "name": "equal next-symbol laws",
+        "partition": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "partition_entropy_nats": 0.6931471805599453,
+        "partition_symbols": [
+          [
+            "z0",
+            "z1"
+          ],
+          [
+            "z2",
+            "z3"
+          ]
+        ],
+        "predictive_fixed": true,
+        "predictive_repair": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "predictive_repair_symbols": [
+          [
+            "z0",
+            "z1"
+          ],
+          [
+            "z2",
+            "z3"
+          ]
+        ],
+        "predictive_residual_nats": 0.0,
+        "strongly_lumpable": false
+      },
+      "one_state_negative_control": {
+        "block_count": 1,
+        "dynamic_closure": [
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "dynamic_closure_excess_blocks": 0,
+        "dynamic_closure_symbols": [
+          [
+            "z0",
+            "z1",
+            "z2",
+            "z3"
+          ]
+        ],
+        "dynamic_fixed": true,
+        "dynamic_repair_trace": [
+          [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ]
+        ],
+        "joint_fixed": false,
+        "joint_repair": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "joint_repair_excess_blocks": 3,
+        "joint_repair_symbols": [
+          [
+            "z0"
+          ],
+          [
+            "z1"
+          ],
+          [
+            "z2"
+          ],
+          [
+            "z3"
+          ]
+        ],
+        "joint_repair_trace": [
+          [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ]
+        ],
+        "lumpability_residual_nats": 0.0,
+        "name": "one-state negative control",
+        "partition": [
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "partition_entropy_nats": 0.0,
+        "partition_symbols": [
+          [
+            "z0",
+            "z1",
+            "z2",
+            "z3"
+          ]
+        ],
+        "predictive_fixed": false,
+        "predictive_repair": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "predictive_repair_symbols": [
+          [
+            "z0",
+            "z1"
+          ],
+          [
+            "z2",
+            "z3"
+          ]
+        ],
+        "predictive_residual_nats": 0.6931471805599453,
+        "strongly_lumpable": true
+      }
+    },
+    "compiled_autonomous_machine": {
+      "alphabet": [
+        0,
+        1
+      ],
+      "contexts": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "predictive_laws": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "successor_symbols": [
+        "z1",
+        "z3",
+        "z0",
+        "z2"
+      ],
+      "symbols": [
+        "z0",
+        "z1",
+        "z2",
+        "z3"
+      ],
+      "transition_rows": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    "heldout_evaluation": {
+      "abstained": 0,
+      "accuracy_on_covered": 1.0,
+      "correct": 504,
+      "coverage": 1.0,
+      "eligible_transitions": 504,
+      "error_example_count": 0,
+      "error_examples": [],
+      "exact_on_eligible_transitions": true,
+      "total_error_records": 0,
+      "wrong": 0
+    },
+    "hidden_environment": {
+      "access_policy": "hidden states are used by the simulator and post-hoc evaluator only",
+      "observation": "a",
+      "state_space": "{0,1} x {0,1} x N_0",
+      "update": "(a,b,n)->(b,1-a,n+1)"
+    },
+    "learned_interface": {
+      "certified": true,
+      "context_count": 4,
+      "contexts": [
+        {
+          "context": [
+            0,
+            0
+          ],
+          "context_label": "[0,0]",
+          "predicted_next_symbol": 1,
+          "support": 248
+        },
+        {
+          "context": [
+            0,
+            1
+          ],
+          "context_label": "[0,1]",
+          "predicted_next_symbol": 1,
+          "support": 248
+        },
+        {
+          "context": [
+            1,
+            0
+          ],
+          "context_label": "[1,0]",
+          "predicted_next_symbol": 0,
+          "support": 248
+        },
+        {
+          "context": [
+            1,
+            1
+          ],
+          "context_label": "[1,1]",
+          "predicted_next_symbol": 0,
+          "support": 248
+        }
+      ],
+      "episodes_seen": 16,
+      "final_order": 2,
+      "initial_order": 1,
+      "maximum_order": 8,
+      "minimum_context_support": 8,
+      "missing_successor_contexts": [],
+      "observations_seen": 1024,
+      "repair_event_count": 1,
+      "repair_events": [
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0
+              ],
+              "episode_index": 0,
+              "observation_prefix": [
+                0
+              ],
+              "target": 0,
+              "time_index": 0
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0
+              ],
+              "episode_index": 0,
+              "observation_prefix": [
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 1
+            },
+            "shared_context": [
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 1,
+          "event_index": 0,
+          "order_after": 2,
+          "order_before": 1,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 0
+        }
+      ],
+      "repair_trace": [
+        1,
+        2
+      ],
+      "sparse_contexts": [],
+      "status": "certified_exact_on_observed_support",
+      "terminal_counterexample": null,
+      "transitions_considered": 992
+    },
+    "learner_input_boundary": {
+      "fields_received": [
+        "observation_episodes"
+      ],
+      "heldout_counter_value_evaluator_only": 1000000,
+      "heldout_episode_count": 4,
+      "heldout_observation_count": 512,
+      "heldout_payload_sha256": "88bd2a583b2cd4ecdc67841c9d59370e427ef433d0c6b7d9bca6d983477b48bc",
+      "hidden_state_received": false,
+      "schema": "tuple[tuple[non-negative integer observation, ...], ...]",
+      "training_counter_values_evaluator_only": [
+        0,
+        1,
+        7,
+        31
+      ],
+      "training_episode_count": 16,
+      "training_observation_count": 1024,
+      "training_payload_sha256": "fe76ba0386d4fabf18a3a8556265b6530f0db612ec7ad2b5dd0094fbb89bf856"
+    },
+    "memory_budget_sensitivity": [
+      {
+        "certified": false,
+        "final_order": 1,
+        "maximum_order": 1,
+        "repair_event_count": 0,
+        "status": "memory_budget_exhausted",
+        "terminal_counterexample": {
+          "left": {
+            "context": [
+              0
+            ],
+            "episode_index": 0,
+            "observation_prefix": [
+              0
+            ],
+            "target": 0,
+            "time_index": 0
+          },
+          "passed": true,
+          "right": {
+            "context": [
+              0
+            ],
+            "episode_index": 0,
+            "observation_prefix": [
+              0,
+              0
+            ],
+            "target": 1,
+            "time_index": 1
+          },
+          "shared_context": [
+            0
+          ],
+          "targets_disagree": true
+        }
+      },
+      {
+        "certified": true,
+        "final_order": 2,
+        "maximum_order": 2,
+        "repair_event_count": 1,
+        "status": "certified_exact_on_observed_support",
+        "terminal_counterexample": null
+      },
+      {
+        "certified": true,
+        "final_order": 2,
+        "maximum_order": 3,
+        "repair_event_count": 1,
+        "status": "certified_exact_on_observed_support",
+        "terminal_counterexample": null
+      },
+      {
+        "certified": true,
+        "final_order": 2,
+        "maximum_order": 4,
+        "repair_event_count": 1,
+        "status": "certified_exact_on_observed_support",
+        "terminal_counterexample": null
+      },
+      {
+        "certified": true,
+        "final_order": 2,
+        "maximum_order": 5,
+        "repair_event_count": 1,
+        "status": "certified_exact_on_observed_support",
+        "terminal_counterexample": null
+      },
+      {
+        "certified": true,
+        "final_order": 2,
+        "maximum_order": 6,
+        "repair_event_count": 1,
+        "status": "certified_exact_on_observed_support",
+        "terminal_counterexample": null
+      },
+      {
+        "certified": true,
+        "final_order": 2,
+        "maximum_order": 7,
+        "repair_event_count": 1,
+        "status": "certified_exact_on_observed_support",
+        "terminal_counterexample": null
+      },
+      {
+        "certified": true,
+        "final_order": 2,
+        "maximum_order": 8,
+        "repair_event_count": 1,
+        "status": "certified_exact_on_observed_support",
+        "terminal_counterexample": null
+      }
+    ],
+    "name": "finite autonomous interface inferred from observations only",
+    "posthoc_hidden_alignment": {
+      "bijective": true,
+      "records": [
+        {
+          "evaluator_hidden_macrostate": [
+            0,
+            0
+          ],
+          "learned_observation_context": [
+            1,
+            0
+          ],
+          "learned_symbol": "z2"
+        },
+        {
+          "evaluator_hidden_macrostate": [
+            0,
+            1
+          ],
+          "learned_observation_context": [
+            0,
+            0
+          ],
+          "learned_symbol": "z0"
+        },
+        {
+          "evaluator_hidden_macrostate": [
+            1,
+            0
+          ],
+          "learned_observation_context": [
+            1,
+            1
+          ],
+          "learned_symbol": "z3"
+        },
+        {
+          "evaluator_hidden_macrostate": [
+            1,
+            1
+          ],
+          "learned_observation_context": [
+            0,
+            1
+          ],
+          "learned_symbol": "z1"
+        }
+      ],
+      "used_for_learning": false
+    },
+    "result": {
+      "heldout_counter_transfer": 1000000,
+      "heldout_exact": true,
+      "hidden_alignment_bijective_posthoc": true,
+      "joint_repaired_block_count": 4,
+      "learned_identity_joint_fixed": true,
+      "learned_memory_order": 2,
+      "learned_state_count": 4,
+      "next_symbol_partition_block_count": 2,
+      "next_symbol_partition_lumpability_residual_nats": 0.6931471805599453,
+      "next_symbol_partition_predictive_residual_nats": 0.0,
+      "one_bit_memory_rejected": true
+    }
+  },
+  "unbounded_countdown_case": {
+    "baselines": {
+      "current_observation_majority": {
+        "abstained": 0,
+        "accuracy_on_covered": 0.9682539682539683,
+        "correct": 244,
+        "coverage": 1.0,
+        "eligible_transitions": 252,
+        "error_example_count": 8,
+        "error_examples": [
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 12
+          },
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 1,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 13
+          },
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 2,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 14
+          },
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 3,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 15
+          },
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 4,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 16
+          },
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 5,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 17
+          },
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 6,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 18
+          },
+          {
+            "context": [
+              0
+            ],
+            "episode_index": 7,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 19
+          }
+        ],
+        "exact_on_eligible_transitions": false,
+        "order": 1,
+        "total_error_records": 8,
+        "wrong": 8
+      },
+      "fixed_order_8_sequence": {
+        "abstained": 0,
+        "accuracy_on_covered": 0.9591836734693877,
+        "correct": 188,
+        "coverage": 1.0,
+        "eligible_transitions": 196,
+        "error_example_count": 8,
+        "error_examples": [
+          {
+            "context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "episode_index": 0,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 12
+          },
+          {
+            "context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "episode_index": 1,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 13
+          },
+          {
+            "context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "episode_index": 2,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 14
+          },
+          {
+            "context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "episode_index": 3,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 15
+          },
+          {
+            "context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "episode_index": 4,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 16
+          },
+          {
+            "context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "episode_index": 5,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 17
+          },
+          {
+            "context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "episode_index": 6,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 18
+          },
+          {
+            "context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "episode_index": 7,
+            "observed": 1,
+            "predicted": 0,
+            "time_index": 19
+          }
+        ],
+        "exact_on_eligible_transitions": false,
+        "order": 8,
+        "total_error_records": 8,
+        "wrong": 8
+      },
+      "one_state_majority": {
+        "abstained": 0,
+        "accuracy_on_covered": 0.5079365079365079,
+        "correct": 128,
+        "coverage": 1.0,
+        "eligible_transitions": 252,
+        "error_example_count": 8,
+        "error_examples": [
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 0,
+            "predicted": 1,
+            "time_index": 0
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 0,
+            "predicted": 1,
+            "time_index": 1
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 0,
+            "predicted": 1,
+            "time_index": 2
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 0,
+            "predicted": 1,
+            "time_index": 3
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 0,
+            "predicted": 1,
+            "time_index": 4
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 0,
+            "predicted": 1,
+            "time_index": 5
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 0,
+            "predicted": 1,
+            "time_index": 6
+          },
+          {
+            "context": [],
+            "episode_index": 0,
+            "observed": 0,
+            "predicted": 1,
+            "time_index": 7
+          }
+        ],
+        "exact_on_eligible_transitions": false,
+        "order": 0,
+        "total_error_records": 124,
+        "wrong": 124
+      }
+    },
+    "heldout_evaluation": {
+      "abstained": 196,
+      "accuracy_on_covered": null,
+      "correct": 0,
+      "coverage": 0.0,
+      "eligible_transitions": 196,
+      "error_example_count": 0,
+      "error_examples": [],
+      "exact_on_eligible_transitions": false,
+      "total_error_records": 0,
+      "wrong": 0
+    },
+    "hidden_environment": {
+      "access_policy": "hidden countdown values are used by the simulator and evaluator only",
+      "observation": "1[n=0]",
+      "state_space": "N_0",
+      "update": "n->max(n-1,0)"
+    },
+    "learner_input_boundary": {
+      "fields_received": [
+        "observation_episodes"
+      ],
+      "heldout_episode_count": 8,
+      "heldout_initial_states_evaluator_only": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "heldout_observation_count": 260,
+      "heldout_payload_sha256": "d82b60ad67214251184e8ceb8aa2193da167384e33616dca024f02665f72a501",
+      "hidden_state_received": false,
+      "schema": "tuple[tuple[binary observation, ...], ...]",
+      "training_episode_count": 12,
+      "training_initial_states_evaluator_only": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "training_observation_count": 270,
+      "training_payload_sha256": "5cd564e469f5dd856166ef6915be05dc81c74ed90ac23a9e3fb61d37dceff3cb"
+    },
+    "memory_budget_sensitivity": [
+      {
+        "certified": false,
+        "final_order": 1,
+        "maximum_order": 1,
+        "repair_event_count": 0,
+        "status": "memory_budget_exhausted",
+        "terminal_counterexample_passed": true,
+        "terminal_shared_context": [
+          0
+        ],
+        "terminal_targets": [
+          1,
+          0
+        ]
+      },
+      {
+        "certified": false,
+        "final_order": 2,
+        "maximum_order": 2,
+        "repair_event_count": 1,
+        "status": "memory_budget_exhausted",
+        "terminal_counterexample_passed": true,
+        "terminal_shared_context": [
+          0,
+          0
+        ],
+        "terminal_targets": [
+          1,
+          0
+        ]
+      },
+      {
+        "certified": false,
+        "final_order": 4,
+        "maximum_order": 4,
+        "repair_event_count": 3,
+        "status": "memory_budget_exhausted",
+        "terminal_counterexample_passed": true,
+        "terminal_shared_context": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_targets": [
+          1,
+          0
+        ]
+      },
+      {
+        "certified": false,
+        "final_order": 8,
+        "maximum_order": 8,
+        "repair_event_count": 7,
+        "status": "memory_budget_exhausted",
+        "terminal_counterexample_passed": true,
+        "terminal_shared_context": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "terminal_targets": [
+          1,
+          0
+        ]
+      }
+    ],
+    "name": "finite observation-memory budget cannot close the countdown",
+    "primary_learner": {
+      "certified": false,
+      "context_count": 8,
+      "contexts": [
+        {
+          "context": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "context_label": "[0,0,0,0,0,0,0,0]",
+          "predicted_next_symbol": null,
+          "support": 15
+        },
+        {
+          "context": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "context_label": "[0,0,0,0,0,0,0,1]",
+          "predicted_next_symbol": 1,
+          "support": 6
+        },
+        {
+          "context": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "context_label": "[0,0,0,0,0,0,1,1]",
+          "predicted_next_symbol": 1,
+          "support": 7
+        },
+        {
+          "context": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "context_label": "[0,0,0,0,0,1,1,1]",
+          "predicted_next_symbol": 1,
+          "support": 8
+        },
+        {
+          "context": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "context_label": "[0,0,0,0,1,1,1,1]",
+          "predicted_next_symbol": 1,
+          "support": 9
+        },
+        {
+          "context": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "context_label": "[0,0,0,1,1,1,1,1]",
+          "predicted_next_symbol": 1,
+          "support": 10
+        },
+        {
+          "context": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "context_label": "[0,0,1,1,1,1,1,1]",
+          "predicted_next_symbol": 1,
+          "support": 11
+        },
+        {
+          "context": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "context_label": "[0,1,1,1,1,1,1,1]",
+          "predicted_next_symbol": 1,
+          "support": 12
+        },
+        {
+          "context": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "context_label": "[1,1,1,1,1,1,1,1]",
+          "predicted_next_symbol": 1,
+          "support": 96
+        }
+      ],
+      "episodes_seen": 12,
+      "final_order": 8,
+      "initial_order": 1,
+      "maximum_order": 8,
+      "minimum_context_support": 1,
+      "missing_successor_contexts": [],
+      "observations_seen": 270,
+      "repair_event_count": 7,
+      "repair_events": [
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0
+              ],
+              "episode_index": 0,
+              "observation_prefix": [
+                0
+              ],
+              "target": 1,
+              "time_index": 0
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0
+              ],
+              "episode_index": 1,
+              "observation_prefix": [
+                0
+              ],
+              "target": 0,
+              "time_index": 0
+            },
+            "shared_context": [
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 2,
+          "event_index": 0,
+          "order_after": 2,
+          "order_before": 1,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 1
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0
+              ],
+              "episode_index": 1,
+              "observation_prefix": [
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 1
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0
+              ],
+              "episode_index": 2,
+              "observation_prefix": [
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 1
+            },
+            "shared_context": [
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 3,
+          "event_index": 1,
+          "order_after": 3,
+          "order_before": 2,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 2
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0,
+                0
+              ],
+              "episode_index": 2,
+              "observation_prefix": [
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 2
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0,
+                0
+              ],
+              "episode_index": 3,
+              "observation_prefix": [
+                0,
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 2
+            },
+            "shared_context": [
+              0,
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 4,
+          "event_index": 2,
+          "order_after": 4,
+          "order_before": 3,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 3
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 3,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 3
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 4,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 3
+            },
+            "shared_context": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 5,
+          "event_index": 3,
+          "order_after": 5,
+          "order_before": 4,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 4
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 4,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 4
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 5,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 4
+            },
+            "shared_context": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 6,
+          "event_index": 4,
+          "order_after": 6,
+          "order_before": 5,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 5
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 5,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 5
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 6,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 5
+            },
+            "shared_context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 7,
+          "event_index": 5,
+          "order_after": 7,
+          "order_before": 6,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 6
+        },
+        {
+          "counterexample": {
+            "left": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 6,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 1,
+              "time_index": 6
+            },
+            "passed": true,
+            "right": {
+              "context": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "episode_index": 7,
+              "observation_prefix": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "target": 0,
+              "time_index": 6
+            },
+            "shared_context": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "targets_disagree": true
+          },
+          "episodes_admitted": 8,
+          "event_index": 6,
+          "order_after": 8,
+          "order_before": 7,
+          "repair": "register one additional observation-history coordinate",
+          "trigger_episode_index": 7
+        }
+      ],
+      "repair_trace": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sparse_contexts": [],
+      "status": "memory_budget_exhausted",
+      "terminal_counterexample": {
+        "left": {
+          "context": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "episode_index": 7,
+          "observation_prefix": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "target": 1,
+          "time_index": 7
+        },
+        "passed": true,
+        "right": {
+          "context": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "episode_index": 8,
+          "observation_prefix": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "target": 0,
+          "time_index": 7
+        },
+        "shared_context": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "targets_disagree": true
+      },
+      "transitions_considered": 174
+    },
+    "result": {
+      "all_finite_budgets_abstained": true,
+      "all_terminal_counterexamples_passed": true,
+      "boundary": "the finite runs witness failure through the declared memory budget; the universal no-finite-suffix statement follows from the symbolic countdown argument retained in the v0.2 report",
+      "exact_baselines": [],
+      "high_accuracy_not_exact": true,
+      "primary_status": "memory_budget_exhausted",
+      "primary_strict_coverage": 0.0
+    }
+  },
+  "verification": {
+    "check_count": 13,
+    "checks": {
+      "contradictory_control_abstains": true,
+      "countdown_all_budgets_abstain": true,
+      "countdown_counterexamples_valid": true,
+      "countdown_high_accuracy_baselines_not_exact": true,
+      "joint_repair_recovers_four_states": true,
+      "posthoc_hidden_alignment_is_bijective": true,
+      "predictive_partition_has_zero_predictive_residual": true,
+      "predictive_partition_is_not_dynamically_closed": true,
+      "stable_four_state_machine": true,
+      "stable_heldout_exact": true,
+      "stable_interface_certified": true,
+      "stable_memory_order_is_two": true,
+      "stable_transfers_to_unseen_counter": true
+    },
+    "passed": true,
+    "passed_count": 13
+  }
+}

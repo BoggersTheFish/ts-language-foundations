@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="940" viewBox="0 0 1440 940">
+<defs><filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<style>
+  .bg { fill:#0b1020; } .panel { fill:#121a2e; stroke:#2c3856; stroke-width:2; }
+  .title { fill:#f4f7ff; font:700 30px system-ui,sans-serif; }
+  .subtitle { fill:#9ba8c7; font:16px system-ui,sans-serif; }
+  .panel-title { fill:#f4f7ff; font:700 20px system-ui,sans-serif; }
+  .state { fill:#f4f7ff; font:700 22px ui-monospace,monospace; }
+  .small { fill:#c7d0e7; font:14px system-ui,sans-serif; }
+  .tiny { fill:#aeb9d3; font:12px system-ui,sans-serif; }
+  .big { fill:#f4f7ff; font:700 34px system-ui,sans-serif; }
+</style>
+<rect width="100%" height="100%" class="bg"/>
+<text x="58" y="52" class="title">RELATIONAL STATE CONSTRUCTION · v0.6</text>
+<text x="58" y="80" class="subtitle">raw histories → generated relation → predictive quotient → autonomous repair</text>
+
+<rect x="48" y="105" width="570" height="365" rx="20" class="panel"/>
+<text x="70" y="138" class="panel-title">1 · Eight raw histories, relation not supplied</text>
+<rect x="70" y="155" width="112" height="70" rx="12" fill="#54d6b5" fill-opacity="0.18" stroke="#54d6b5"/><text x="126" y="186" text-anchor="middle" class="state">000</text><text x="126" y="209" text-anchor="middle" class="tiny">xor=0</text><rect x="202" y="155" width="112" height="70" rx="12" fill="#ff8d78" fill-opacity="0.18" stroke="#ff8d78"/><text x="258" y="186" text-anchor="middle" class="state">001</text><text x="258" y="209" text-anchor="middle" class="tiny">xor=1</text><rect x="334" y="155" width="112" height="70" rx="12" fill="#ff8d78" fill-opacity="0.18" stroke="#ff8d78"/><text x="390" y="186" text-anchor="middle" class="state">010</text><text x="390" y="209" text-anchor="middle" class="tiny">xor=1</text><rect x="466" y="155" width="112" height="70" rx="12" fill="#54d6b5" fill-opacity="0.18" stroke="#54d6b5"/><text x="522" y="186" text-anchor="middle" class="state">011</text><text x="522" y="209" text-anchor="middle" class="tiny">xor=0</text><rect x="70" y="251" width="112" height="70" rx="12" fill="#54d6b5" fill-opacity="0.18" stroke="#54d6b5"/><text x="126" y="282" text-anchor="middle" class="state">100</text><text x="126" y="305" text-anchor="middle" class="tiny">xor=0</text><rect x="202" y="251" width="112" height="70" rx="12" fill="#ff8d78" fill-opacity="0.18" stroke="#ff8d78"/><text x="258" y="282" text-anchor="middle" class="state">101</text><text x="258" y="305" text-anchor="middle" class="tiny">xor=1</text><rect x="334" y="251" width="112" height="70" rx="12" fill="#ff8d78" fill-opacity="0.18" stroke="#ff8d78"/><text x="390" y="282" text-anchor="middle" class="state">110</text><text x="390" y="305" text-anchor="middle" class="tiny">xor=1</text><rect x="466" y="251" width="112" height="70" rx="12" fill="#54d6b5" fill-opacity="0.18" stroke="#54d6b5"/><text x="522" y="282" text-anchor="middle" class="state">111</text><text x="522" y="305" text-anchor="middle" class="tiny">xor=0</text>
+<text x="70" y="383" class="small">Grammar: 20 truth functions · 65 unique partitions</text>
+<text x="70" y="412" class="small">Verifier-selected: xor(lag0,lag1)</text>
+<text x="70" y="440" class="tiny">XOR/EQ polarity remains canonically, not semantically, labelled.</text>
+
+<rect x="642" y="105" width="750" height="365" rx="20" class="panel"/>
+<text x="668" y="138" class="panel-title">2 · Predictive compression is not autonomous closure</text>
+<circle cx="760" cy="252" r="72" fill="#54d6b5" fill-opacity="0.16" stroke="#54d6b5" stroke-width="3"/>
+<circle cx="940" cy="252" r="72" fill="#ff8d78" fill-opacity="0.16" stroke="#ff8d78" stroke-width="3"/>
+<text x="760" y="246" text-anchor="middle" class="big">0</text><text x="760" y="274" text-anchor="middle" class="tiny">4 histories</text>
+<text x="940" y="246" text-anchor="middle" class="big">1</text><text x="940" y="274" text-anchor="middle" class="tiny">4 histories</text>
+<path d="M1030 252 L1110 252" stroke="#f2d675" stroke-width="4"/>
+<text x="1070" y="232" text-anchor="middle" class="tiny">Cₚ</text>
+<g transform="translate(1150,190)">
+  <rect x="0" y="0" width="76" height="76" rx="12" fill="#62a8ff" fill-opacity=".18" stroke="#62a8ff"/>
+  <rect x="92" y="0" width="76" height="76" rx="12" fill="#62a8ff" fill-opacity=".18" stroke="#62a8ff"/>
+  <rect x="0" y="92" width="76" height="76" rx="12" fill="#62a8ff" fill-opacity=".18" stroke="#62a8ff"/>
+  <rect x="92" y="92" width="76" height="76" rx="12" fill="#62a8ff" fill-opacity=".18" stroke="#62a8ff"/>
+  <text x="38" y="46" text-anchor="middle" class="state">00</text><text x="130" y="46" text-anchor="middle" class="state">01</text>
+  <text x="38" y="138" text-anchor="middle" class="state">10</text><text x="130" y="138" text-anchor="middle" class="state">11</text>
+</g>
+<text x="760" y="361" text-anchor="middle" class="small">predictive blocks = 2</text>
+<text x="1234" y="386" text-anchor="middle" class="small">autonomous blocks = 4</text>
+<text x="668" y="425" class="tiny">R = 0.000235 · L = 0.137065 nats · lag2 discarded</text>
+
+<rect x="48" y="494" width="642" height="398" rx="20" class="panel"/>
+<text x="72" y="528" class="panel-title">3 · Active intervention exposes the relation earlier</text>
+<text x="72" y="570" class="small">active relation</text><rect x="205" y="550" width="187.7" height="28" rx="6" fill="#54d6b5"/><text x="402.7" y="570" class="small">9,728</text><text x="72" y="624" class="small">uniform relation</text><rect x="205" y="604" width="375.4" height="28" rx="6" fill="#ff8d78"/><text x="590.4" y="624" class="small">19,456</text><text x="72" y="678" class="small">active fixed</text><rect x="205" y="658" width="395.2" height="28" rx="6" fill="#62a8ff"/><text x="610.2" y="678" class="small">20,480</text><text x="72" y="732" class="small">uniform fixed</text><rect x="205" y="712" width="410.0" height="28" rx="6" fill="#b991ff"/><text x="625.0" y="732" class="small">21,248</text>
+<text x="72" y="795" class="small">paired median relation-step ratio</text>
+<text x="72" y="833" class="big">0.506</text>
+<text x="205" y="825" class="tiny">bootstrap 95% [0.4875, 0.530316526351089]</text>
+<text x="72" y="866" class="tiny">50/50 active · 50/50 uniform full recoveries</text>
+
+<rect x="714" y="494" width="678" height="398" rx="20" class="panel"/>
+<text x="740" y="528" class="panel-title">4 · Heldout NLL · hostile controls</text>
+<line x1="760" y1="724" x2="1355" y2="724" stroke="#465373" stroke-width="2"/>
+<rect x="782" y="566.9" width="70" height="157.1" rx="7" fill="#7e8aa8"/><text x="817" y="557.9" text-anchor="middle" class="tiny">0.693</text><text x="817" y="748" text-anchor="middle" class="tiny">one</text><rect x="888" y="566.9" width="70" height="157.1" rx="7" fill="#7e8aa8"/><text x="923" y="557.9" text-anchor="middle" class="tiny">0.693</text><text x="923" y="748" text-anchor="middle" class="tiny">lag0</text><rect x="994" y="566.9" width="70" height="157.1" rx="7" fill="#7e8aa8"/><text x="1029" y="557.9" text-anchor="middle" class="tiny">0.693</text><text x="1029" y="748" text-anchor="middle" class="tiny">lag1</text><rect x="1100" y="596.9" width="70" height="127.1" rx="7" fill="#54d6b5"/><text x="1135" y="587.9" text-anchor="middle" class="tiny">0.561</text><text x="1135" y="748" text-anchor="middle" class="tiny">XOR</text><rect x="1206" y="596.8" width="70" height="127.2" rx="7" fill="#62a8ff"/><text x="1241" y="587.8" text-anchor="middle" class="tiny">0.561</text><text x="1241" y="748" text-anchor="middle" class="tiny">raw 8</text>
+<text x="760" y="780" class="small">lower NLL is better · selected XOR matches raw identity</text>
+<rect x="760" y="807" width="590" height="58" rx="10" fill="#19233b" stroke="#344361"/>
+<text x="776" y="831" class="tiny">null false relation: 0 · omitted grammar: ABSTAIN · passive: ABSTAIN</text>
+<text x="776" y="852" class="tiny">drift: 25/25 detected · verifier: 30/30</text>
+</svg>

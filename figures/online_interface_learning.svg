@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#9fb5cc"/></marker>
+  <style>
+    .title{font:700 34px system-ui,sans-serif;fill:#70ddff} .head{font:600 23px system-ui,sans-serif;fill:#e6eef8}
+    .body{font:18px system-ui,sans-serif;fill:#d4dfed} .small{font:15px system-ui,sans-serif;fill:#a8bdd3}
+    .tiny{font:13px system-ui,sans-serif;fill:#cbb7df} .value{font:600 17px system-ui,sans-serif;fill:#f1f6fb}
+    .panel{fill:#102136;stroke:#315a7d;stroke-width:2} .node{fill:#194563;stroke:#70ddff;stroke-width:3}
+  </style>
+</defs>
+<rect width="1400" height="900" fill="#071321"/>
+<text x="48" y="58" class="title">Observation-only repair — finite interface, hidden infinite interior</text>
+
+<rect x="40" y="90" width="410" height="410" rx="18" class="panel"/>
+<text x="68" y="130" class="head">1. The learner sees only this</text>
+<text x="68" y="167" class="small">hidden simulator: (a,b,n) → (b,1−a,n+1)</text>
+<rect x="70" y="200" width="350" height="72" rx="12" fill="#0b1828" stroke="#4f7799"/>
+<text x="245" y="245" text-anchor="middle" class="head">0 0 1 1 0 0 1 1 …</text>
+<text x="68" y="310" class="body">No a, b, n labels. No state IDs.</text>
+<text x="68" y="344" class="body">Only finite observation episodes.</text>
+<text x="68" y="395" class="small">held-out fibre index</text>
+<text x="68" y="430" class="head">n = 1,000,000</text>
+<text x="68" y="466" class="body" fill="#65e6a5">504/504 transitions correct</text>
+
+<rect x="470" y="90" width="890" height="410" rx="18" class="panel"/>
+<text x="500" y="130" class="head">2. Counterexample → memory repair → autonomous closure</text>
+<circle cx="555" cy="225" r="56" class="node"/><text x="555" y="218" text-anchor="middle" class="value">k = 1</text><text x="555" y="242" text-anchor="middle" class="tiny">0 → 0 and 1</text>
+<path d="M 615 225 L 690 225" stroke="#9fb5cc" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="653" y="205" text-anchor="middle" class="tiny">split memory</text>
+<circle cx="760" cy="225" r="70" class="node"/><text x="760" y="209" text-anchor="middle" class="value">k = 2</text><text x="760" y="235" text-anchor="middle" class="tiny">00 01 10 11</text><text x="760" y="258" text-anchor="middle" class="tiny">next symbol exact</text>
+<path d="M 833 225 L 910 225" stroke="#9fb5cc" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="872" y="205" text-anchor="middle" class="tiny">predictive quotient</text>
+<circle cx="985" cy="225" r="70" fill="#3f3155" stroke="#c58cff" stroke-width="3"/><text x="985" y="209" text-anchor="middle" class="value">2 blocks</text><text x="985" y="235" text-anchor="middle" class="tiny">R = 0</text><text x="985" y="258" text-anchor="middle" class="tiny">L = ln 2</text>
+<path d="M 1058 225 L 1135 225" stroke="#9fb5cc" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1097" y="205" text-anchor="middle" class="tiny">dynamic repair</text>
+<circle cx="1210" cy="225" r="70" fill="#184b3d" stroke="#65e6a5" stroke-width="3"/><text x="1210" y="209" text-anchor="middle" class="value">4 states</text><text x="1210" y="235" text-anchor="middle" class="tiny">R = 0, L = 0</text><text x="1210" y="258" text-anchor="middle" class="tiny">autonomous</text>
+<text x="500" y="342" class="body">00 → 01 → 11 → 10 → 00</text>
+<text x="500" y="382" class="small">Prediction merges contexts that dynamics must keep separate.</text>
+<text x="500" y="424" class="small">The four learned symbols align bijectively with (a,b) only after evaluation.</text>
+<text x="500" y="463" class="body" fill="#65e6a5">Hidden-state supervision used: none</text>
+
+<rect x="40" y="520" width="650" height="330" rx="18" class="panel"/>
+<text x="68" y="560" class="head">3. Stable-process held-out accuracy</text>
+<line x1="68" y1="745" x2="630" y2="745" stroke="#66829c" stroke-width="2"/>
+<rect x="80" y="670.0" width="92" height="75.0" rx="8" fill="#ffbf5b" opacity="0.88"/><text x="126" y="660.0" text-anchor="middle" class="value">0.50</text><text x="126" y="772" text-anchor="middle" class="small">one state</text><rect x="215" y="670.0" width="92" height="75.0" rx="8" fill="#ffbf5b" opacity="0.88"/><text x="261" y="660.0" text-anchor="middle" class="value">0.50</text><text x="261" y="772" text-anchor="middle" class="small">current bit</text><rect x="350" y="595.0" width="92" height="150.0" rx="8" fill="#65e6a5" opacity="0.88"/><text x="396" y="585.0" text-anchor="middle" class="value">1.00</text><text x="396" y="772" text-anchor="middle" class="small">fixed k=2</text><rect x="485" y="595.0" width="92" height="150.0" rx="8" fill="#70ddff" opacity="0.88"/><text x="531" y="585.0" text-anchor="middle" class="value">1.00</text><text x="531" y="772" text-anchor="middle" class="small">adaptive</text>
+<text x="68" y="816" class="small">Fixed k=2 matches prediction; adaptive repair selects k=2 and certifies closure.</text>
+
+<rect x="710" y="520" width="650" height="330" rx="18" class="panel"/>
+<text x="740" y="560" class="head">4. Countdown: every finite budget fails closure</text>
+<circle cx="790" cy="655" r="36" fill="#402c58" stroke="#c58cff" stroke-width="3"/><text x="790" y="650" text-anchor="middle" class="value">k=1</text><text x="790" y="674" text-anchor="middle" class="tiny">conflict</text><circle cx="910" cy="655" r="36" fill="#402c58" stroke="#c58cff" stroke-width="3"/><text x="910" y="650" text-anchor="middle" class="value">k=2</text><text x="910" y="674" text-anchor="middle" class="tiny">conflict</text><path d="M 826 655 L 870 655" stroke="#9fb5cc" stroke-width="2" marker-end="url(#arrow)"/><circle cx="1030" cy="655" r="36" fill="#402c58" stroke="#c58cff" stroke-width="3"/><text x="1030" y="650" text-anchor="middle" class="value">k=4</text><text x="1030" y="674" text-anchor="middle" class="tiny">conflict</text><path d="M 946 655 L 990 655" stroke="#9fb5cc" stroke-width="2" marker-end="url(#arrow)"/><circle cx="1150" cy="655" r="36" fill="#402c58" stroke="#c58cff" stroke-width="3"/><text x="1150" y="650" text-anchor="middle" class="value">k=8</text><text x="1150" y="674" text-anchor="middle" class="tiny">conflict</text><path d="M 1066 655 L 1110 655" stroke="#9fb5cc" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="740" y="735" class="body">current-bit accuracy = 0.968, errors = 8</text>
+<text x="740" y="770" class="body">fixed k=8 accuracy = 0.959, errors = 8</text>
+<text x="740" y="808" class="body" fill="#c58cff">Verifier result: abstain — no exact finite closure certified</text>
+<text x="48" y="882" class="small">Exact deterministic fixtures. Finite runs test declared budgets; symbolic arguments carry universal claims.</text>
+</svg>

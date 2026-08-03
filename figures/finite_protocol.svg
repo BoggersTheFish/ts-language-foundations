@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<defs><style>
+.bg{fill:#07111f} .panel{fill:#0d1d31;stroke:#294767;stroke-width:2} .t{fill:#e8f1ff;font:22px system-ui}
+.h{fill:#7ee7ff;font:bold 34px system-ui} .s{fill:#9bb3ce;font:17px system-ui} .node{fill:#173a55;stroke:#7ee7ff;stroke-width:3}
+.good{fill:#75f0a7} .warn{fill:#ffcf70} .arrow{stroke:#9bb3ce;stroke-width:3;fill:none;marker-end:url(#m)}
+</style><marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#9bb3ce"/></marker></defs>
+<rect class="bg" width="1200" height="760"/><text class="h" x="55" y="60">Repaired state → opaque protocol — finite v0.1 receipt</text>
+<rect class="panel" x="45" y="90" width="500" height="360" rx="18"/><text class="t" x="75" y="130">World dynamics: (a,b) → (b,1−a)</text>
+<path class="arrow" d="M170 205 C260 145,350 145,440 205"/><path class="arrow" d="M455 230 C510 300,510 330,455 380"/>
+<path class="arrow" d="M420 395 C330 455,240 455,150 395"/><path class="arrow" d="M135 370 C80 300,80 270,135 220"/>
+<circle class="node" cx="145" cy="205" r="42"/><circle class="node" cx="455" cy="205" r="42"/><circle class="node" cx="455" cy="390" r="42"/><circle class="node" cx="145" cy="390" r="42"/>
+<text class="t" x="126" y="213">00</text><text class="t" x="436" y="213">01</text><text class="t" x="436" y="398">11</text><text class="t" x="126" y="398">10</text>
+<rect class="panel" x="575" y="90" width="580" height="360" rx="18"/><text class="t" x="605" y="130">Repair receipt</text>
+<text class="s" x="605" y="175">Task partition</text><text class="t" x="820" y="175">{00,01} | {10,11}</text>
+<text class="s" x="605" y="220">Predictive residual</text><text class="good t" x="820" y="220">0.000 nats</text>
+<text class="s" x="605" y="265">Lumpability residual</text><text class="warn t" x="820" y="265">0.693147 nats</text>
+<text class="s" x="605" y="310">Dynamic closure</text><text class="t" x="820" y="310">4 singleton states</text>
+<text class="s" x="605" y="355">Recovered coordinates</text><text class="t" x="820" y="355">a and hidden phase b</text>
+<text class="s" x="605" y="400">Opaque message</text><text class="t" x="820" y="400">{signal(a), signal(b)}</text>
+<rect class="panel" x="45" y="485" width="1110" height="220" rx="18"/><text class="t" x="75" y="530">Leave-one-state-out verifier result across signal renamings</text>
+<text class="h good" x="75" y="600">100%</text><text class="s" x="75" y="635">slot-free type inference + autonomous rollout</text>
+<text class="h warn" x="650" y="600">0%</text><text class="s" x="650" y="635">held-out coverage for one-signal-per-state code</text>
+<text class="s" x="75" y="680">Controlled fixture only. Bounded factors, exact feedback, one-signal-per-factor form, and the score remain scaffolds.</text>
+</svg>

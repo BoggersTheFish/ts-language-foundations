@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+<rect width="100%" height="100%" fill="#08111f"/>
+<style>
+text { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; fill: #e8f2ff; }
+.title { font: 700 27px system-ui, sans-serif; } .sub { fill:#9fb5ce; font: 15px system-ui,sans-serif; }
+.big { font:700 28px system-ui,sans-serif; } .label { font:600 15px system-ui,sans-serif; }
+.small { font:13px system-ui,sans-serif; fill:#a9bed6; }
+</style>
+<text x="60" y="55" class="title">Typed ternary sequence repair · verified v0.7.0</text>
+<text x="60" y="83" class="sub">Prediction compresses 27 raw histories to 2; autonomous evolution needs 18, not 27.</text>
+
+<g transform="translate(60,125)">
+  <rect x="0" y="0" width="210" height="115" rx="16" fill="#13283d" stroke="#48789f"/>
+  <text x="105" y="44" text-anchor="middle" class="big">27</text><text x="105" y="75" text-anchor="middle" class="label">raw histories</text>
+  <path d="M220 58 H292" stroke="#54d6a3" stroke-width="4"/><path d="M292 58 l-12 -8 v16 z" fill="#54d6a3"/>
+  <rect x="302" y="0" width="210" height="115" rx="16" fill="#123a38" stroke="#54d6a3" stroke-width="2"/>
+  <text x="407" y="44" text-anchor="middle" class="big">2</text><text x="407" y="75" text-anchor="middle" class="label">predictive blocks</text><text x="407" y="99" text-anchor="middle" class="small">eq(lag0, lag2)</text>
+  <path d="M522 58 H594" stroke="#ffbd66" stroke-width="4"/><path d="M594 58 l-12 -8 v16 z" fill="#ffbd66"/>
+  <rect x="604" y="0" width="250" height="115" rx="16" fill="#3a2b1c" stroke="#ffbd66" stroke-width="2"/>
+  <text x="729" y="44" text-anchor="middle" class="big">18</text><text x="729" y="75" text-anchor="middle" class="label">autonomous blocks</text><text x="729" y="99" text-anchor="middle" class="small">closure: 2 → 4 → 12 → 18</text>
+  <path d="M864 58 H936" stroke="#73879c" stroke-width="3" stroke-dasharray="8 7"/><path d="M936 58 l-12 -8 v16 z" fill="#73879c"/>
+  <rect x="946" y="0" width="210" height="115" rx="16" fill="#1b2633" stroke="#73879c"/>
+  <text x="1051" y="44" text-anchor="middle" class="big">27</text><text x="1051" y="75" text-anchor="middle" class="label">identity control</text><text x="1051" y="99" text-anchor="middle" class="small">unnecessary detail</text>
+</g>
+
+<g transform="translate(60,300)">
+ <rect width="560" height="205" rx="18" fill="#0e1c2b" stroke="#29445e"/>
+ <text x="25" y="36" class="label">ACTIVE INTERVENTION</text>
+ <text x="25" y="78" class="small">active · 18432 steps</text>
+ <rect x="190" y="59" width="158.8" height="24" rx="6" fill="#54d6a3"/>
+ <text x="25" y="126" class="small">uniform · 34816 steps</text>
+ <rect x="190" y="107" width="300.0" height="24" rx="6" fill="#6d8dad"/>
+ <text x="25" y="169" class="small">Bayesian scores choose actions; confidence bounds alone choose state.</text>
+ <text x="25" y="190" class="small">Primary observation ratio: 0.529</text>
+</g>
+
+<g transform="translate(660,300)">
+ <rect width="560" height="205" rx="18" fill="#0e1c2b" stroke="#29445e"/>
+ <text x="25" y="36" class="label">TRANSFER TEST</text>
+ <text x="25" y="77" class="small">compatible residual · 0</text>
+ <circle cx="205" cy="72" r="8" fill="#54d6a3"/>
+ <text x="25" y="121" class="small">incompatible residual · 0.4596 nats</text>
+ <rect x="340" y="102" width="174.6" height="24" rx="6" fill="#ff6f7d"/>
+ <text x="25" y="166" class="small">task family · 2 + 3 → 6 predictive → 18 autonomous</text>
+ <text x="25" y="190" class="small">The frozen state is reused only when the new law factors through it.</text>
+</g>
+
+<g transform="translate(60,555)">
+ <rect width="1160" height="145" rx="18" fill="#0e1c2b" stroke="#29445e"/>
+ <text x="25" y="37" class="label">THE MATHEMATICAL HIT</text>
+ <text x="25" y="72" class="small">At one state:  C(P(π)) = 18 blocks, but P(C(π)) = 2 blocks. Partial repairs do not commute.</text>
+ <text x="25" y="100" class="small">Fair completion still reaches the same least common fixed point. Repair restores only the distinctions needed for continuation.</text>
+ <text x="25" y="127" class="small">Evidence boundary: finite declared world + grammar + verifier. No language, neural, consciousness, or universality claim.</text>
+</g>
+</svg>

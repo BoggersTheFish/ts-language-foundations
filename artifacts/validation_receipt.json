@@ -1,0 +1,103 @@
+{
+  "schema_version": "ts-language-foundations-validation-v0.7",
+  "validated_at_utc": "2026-08-02T15:20:17Z",
+  "release": "ts-language-foundations-v0.7.0",
+  "environment": {
+    "python": "3.12.13",
+    "python_build": "Clang 21.1.4",
+    "pytest": "9.1.1",
+    "platform": "Linux 6.12.13 x86_64"
+  },
+  "test_suite": {
+    "command": "pytest -q",
+    "passed": 147,
+    "failed": 0,
+    "duration_seconds": 205.18,
+    "result": "passed"
+  },
+  "scientific_runs": {
+    "v0.1_protocol": {
+      "result": "passed",
+      "summary": "96/96 ordered and 96/96 unordered protocol trials",
+      "receipt_sha256": "693b845fd302a0fc46d3e647e0fe71ab9ca2a7c5d27721c9ae2bedd4fbcca280"
+    },
+    "v0.2_infinite_interface": {
+      "result": "passed",
+      "summary": "24576 predictive checks and 512 induction instances",
+      "receipt_sha256": "d1997d19db0368a5e0790285c3d36580e3a413c6152e413d81a645fc1a54e91a"
+    },
+    "v0.3_observation_only": {
+      "result": "passed",
+      "summary": "order 2, four states, 504/504 heldout transitions, countdown abstention",
+      "receipt_sha256": "723665999742ff251396f793ed16a6bd4d554b677b7d9e3a90b9215ffb36d97d"
+    },
+    "v0.4_stochastic": {
+      "result": "passed",
+      "summary": "99/100 primary recovery and zero false splits",
+      "receipt_sha256": "fdf802308dd1d4cc0fcb8e67efcc7624207ecf5928d762520339f74a1d6a3b93"
+    },
+    "v0.5_active": {
+      "result": "passed",
+      "summary": "100/100 recovery and zero false splits",
+      "receipt_sha256": "ede3f527af3d093161409c70a2f110fca7f249a6e1a0f003a12636ced3482088"
+    },
+    "v0.6_relational": {
+      "result": "passed",
+      "summary": "50/50 active and uniform recovery; 30/30 scientific checks",
+      "receipt_sha256": "0b77792614364709c38d60f8fa9d7137b1a4abbf8d64e4d670a6d2bdb98bd47e"
+    },
+    "v0.7_typed_sequence": {
+      "result": "passed",
+      "summary": "20/20 active and uniform recovery; 29/29 scientific checks; all repeated controls passed",
+      "receipt_sha256": "25e176d56fcceeb79f138c71fa59d9cd87709e7bae594fc14f9f63f80582910d"
+    }
+  },
+  "v0.7_primary_result": {
+    "raw_states": 27,
+    "constructed_predictive_state": "eq(lag0,lag2)",
+    "predictive_blocks": 2,
+    "autonomous_blocks": 18,
+    "identity_blocks": 27,
+    "closure_trace_blocks": [2, 4, 12, 18],
+    "predictive_residual_nats": 0.0,
+    "lumpability_residual_nats": 0.1264956890938924,
+    "compatible_transfer_residual_nats": 0.0,
+    "incompatible_transfer_residual_nats": 0.4595804290179329,
+    "task_family_predictive_blocks": 6,
+    "task_family_autonomous_blocks": 18,
+    "active_median_steps": 18432,
+    "uniform_median_steps": 35840,
+    "paired_median_step_ratio": 0.5,
+    "paired_bootstrap_95_interval": [0.47368421052631576, 0.5294117647058824]
+  },
+  "exhaustive_declared_family_audit": {
+    "candidate_partitions": 1504,
+    "comparable_ordered_pairs": 20307,
+    "extensivity_failures": 0,
+    "idempotence_failures": 0,
+    "monotonicity_failures": 0,
+    "enlarged_action_family_failures": 0,
+    "repair_order_failures": 0,
+    "dynamic_fixed_points": 3,
+    "joint_fixed_points": 2,
+    "noncommuting_partial_repairs": 8,
+    "unique_joint_completions": 42,
+    "scope_boundary": "grammar-generated candidates only; not the full partition lattice of 27 states"
+  },
+  "visual_qa": {
+    "source": "figures/sequence_repair.svg",
+    "source_sha256": "7e079131d723d2fd679ab4b214fa10c54e8a6c5ef3a15e8f75bc767618860c3c",
+    "renderer": "@resvg/resvg-js 2.6.2",
+    "rendered_dimensions": "1280x760",
+    "inspection": "passed after moving the incompatible-transfer residual bar clear of its label"
+  },
+  "report": {
+    "path": "docs/SEQUENCE_REPAIR_REPORT.md",
+    "sha256": "24d454563c630faf3b88f4d357ae88c16567f924ea10d243a62aac3b8c6d12c1"
+  },
+  "boundaries": [
+    "finite declared fixture and grammar",
+    "Monte Carlo intervals describe algorithmic seed sensitivity, not a population",
+    "no language-model, neural-mechanism, consciousness, or universality claim"
+  ]
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ts-language-foundations"
+version = "0.7.0"
+description = "Verifier-authorised construction, transfer, and dynamic repair of typed categorical interfaces."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["numpy>=1.24", "pytest>=8"]
+
+[project.scripts]
+ts-language-foundations = "ts_language_foundations.cli:main"
+ts-infinite-interface = "ts_language_foundations.infinite_cli:main"
+ts-online-interface = "ts_language_foundations.online_cli:main"
+ts-stochastic-interface = "ts_language_foundations.stochastic_cli:main"
+ts-active-repair = "ts_language_foundations.active_cli:main"
+ts-relational-repair = "ts_language_foundations.relational_cli:main"
+ts-sequence-repair = "ts_language_foundations.sequence_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
