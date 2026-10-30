@@ -1,0 +1,6 @@
+name = "ts_formal"
+version = "0.1.0"
+defaultTargets = ["TSFormal"]
+
+[[lean_lib]]
+name = "TSFormal"

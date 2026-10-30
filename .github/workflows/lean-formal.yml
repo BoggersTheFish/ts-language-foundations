@@ -1,0 +1,30 @@
+name: Lean formal companion
+
+on:
+  pull_request:
+    paths:
+      - 'formal/**'
+      - '.github/workflows/lean-formal.yml'
+  push:
+    paths:
+      - 'formal/**'
+      - '.github/workflows/lean-formal.yml'
+
+jobs:
+  kernel-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: formal
+          auto-config: false
+          build: true
+          use-mathlib-cache: false
+      - name: Install bubblewrap for sandboxed kernel check
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq bubblewrap
+      - name: Independently check exported project and reject nonstandard axioms
+        run: lake check
+        working-directory: formal
