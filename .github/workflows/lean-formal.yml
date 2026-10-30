@@ -23,6 +23,8 @@ jobs:
           auto-config: false
           build: true
           use-mathlib-cache: false
+      - name: Install bubblewrap for sandboxed kernel check
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq bubblewrap
       - name: Independently check exported project and reject nonstandard axioms
         run: lake check
         working-directory: formal
