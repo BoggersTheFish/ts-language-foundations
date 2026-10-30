@@ -33,7 +33,7 @@ theorem quotient_commutes (w : InfiniteWorld) :
 theorem every_fibre_is_unbounded (a b : Bool) (lowerBound : Nat) :
     ∃ w : InfiniteWorld, quotient w = (a, b) ∧ lowerBound < w.nuisance := by
   refine ⟨⟨a, b, lowerBound + 1⟩, rfl, ?_⟩
-  exact Nat.lt_succ_self lower
+  exact Nat.lt_succ_self lowerBound
 
 def immediateTask (w : InfiniteWorld) : Bool := w.a
 
